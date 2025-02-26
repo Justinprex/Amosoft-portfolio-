@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AMOSOFT Technologies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: gold;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: gold;
+            color: black;
+            padding: 15px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid gold;
+            border-radius: 10px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            background-color: black;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid gold;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid gold;
+            background-color: black;
+            color: gold;
+        }
+        input[type="submit"], input[type="reset"] {
+            background-color: gold;
+            color: black;
+            font-weight: bold;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        a {
+            color: gold;
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: gold;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact AMOSOFT Technologies</h1>
+    </header>
+
+    <section>
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Fill out the form below or reach us directly through the contact details provided.</p>
+
+        <form action="mailto:info@amosoft.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </form>
+
+        <h3>Contact Details</h3>
+        <ul>
+            <li>Email: <a href="mailto:Oluwajustifymiicebliss@gmail.com">info@amosoft.com</a></li>
+            <li>Phone: +234 9051615830</li>
+            <li>Address: 123 AMOSOFT Street, Tech City, World</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AMOSOFT Technologies. All rights reserved.</p>
+        <a href="AMOSOFT TECHNOLOGY.html">Back to Home</a>
+    </footer>
+</body>
+</html>
