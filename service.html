@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Amosoft Technologies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 0;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .services {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+        .service-card {
+            background: #fff;
+            color: #000;
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+            text-align: center;
+            border: 1px solid #000;
+        }
+        .service-card h3 {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        .service-card ul li {
+            padding: 5px 0;
+            font-size: 1rem;
+        }
+        .service-card:hover {
+            background: #FFD700;
+            color: #000;
+        }
+        .service-card:hover h3 {
+            color: #000;
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Web Development & Design</h3>
+                    <ul>
+                        <li>Custom Website Development</li>
+                        <li>E-commerce Development</li>
+                        <li>Real Estate Website Development</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Bot Development & Automation</h3>
+                    <ul>
+                        <li>Prediction Bots</li>
+                        <li>Virtual Football Script (VFS) Bots</li>
+                        <li>Website Automation Bots</li>
+                        <li>AI Chatbots</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Mobile & Web Applications</h3>
+                    <ul>
+                        <li>Web Apps for Businesses</li>
+                        <li>Hybrid Mobile App Development</li>
+                        <li>API Integration</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>AI & Data Analytics</h3>
+                    <ul>
+                        <li>AI-Driven Sports Prediction</li>
+                        <li>Data Analysis</li>
+                        <li>Machine Learning Integration</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>Digital Marketing & Automation</h3>
+                    <ul>
+                        <li>Email Marketing with Klaviyo</li>
+                        <li>Social Media Automation</li>
+                        <li>SEO & Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>IT Consultation & Custom Solutions</h3>
+                    <ul>
+                        <li>Business Process Automation</li>
+                        <li>Payment Gateway Integration</li>
+                        <li>System Maintenance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const serviceCards = document.querySelectorAll(".service-card");
+            
+            serviceCards.forEach(card => {
+                card.addEventListener("mouseover", () => {
+                    card.style.transform = "scale(1.05)";
+                    card.style.boxShadow = "0px 4px 15px rgba(0, 0, 0, 0.2)";
+                });
+                
+                card.addEventListener("mouseleave", () => {
+                    card.style.transform = "scale(1)";
+                    card.style.boxShadow = "none";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
